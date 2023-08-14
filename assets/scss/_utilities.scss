@@ -1,0 +1,20 @@
+.font-content{
+    font-family: 'Noto Sans TC', serif;
+}
+
+.mt-top{
+    margin-top: 98px;
+    @include large{
+        margin-top: 122px;
+    }
+}
+
+.themeSize{
+    width: 40px;
+    height: 40px;
+
+    @include large{
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,4 +1,27 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logoImg{
+  width: 53px;
+  height: 53px;
+}
+
+.searchBox{
+  width: 335px;
+  height: 55px;
+
+}
+
+.nav-link{
+  color:$primary;
+  &:hover{
+    color:$warning;
+  }
+}
+
+.navbar-toggler{
+  border-radius: 4px;
+  .navbar-toggler-icon {
+  
+    background-image: url(../images/hamMenu.svg);
+    
+  }
+  
 }

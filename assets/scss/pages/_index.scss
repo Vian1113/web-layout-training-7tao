@@ -1,3 +1,30 @@
-.index-title {
-  font-size: 100px;
+.guide {
+  .banner {
+    background-image: url(../images/event/13.jpg);
+    //width: 1296px;
+    height: 518px;
+    object-fit: cover;
+    background-position: 15% 45%;
+
+  }
+}
+
+
+.themeList {
+  .itemLink {
+    padding: 20px 0px;
+
+    @include large {
+      padding: 35px 0px;
+    }
+
+  }
+
+  .itemMore {
+    padding: 34px 0px;
+
+    @include large {
+      padding: 64px 0px;
+    }
+  }
 }
