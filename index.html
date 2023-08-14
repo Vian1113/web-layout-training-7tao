@@ -1,63 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/web-layout-training-7tao/assets/main-f7954625.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-7tao/assets/main-e0d12eac.css">
-  </head>
-  <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title fs-md-1 fs-3">我是首頁</h1>
-    <i class="bi bi-search fs-1"></i>
-    <h1 class="index-title fs-md-1 fs-3">我是內文</h1>
 
-    <div class="card" style="width: 18rem">
-      <img src="/web-layout-training-7tao/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <i class="bi bi-search fs-1"></i>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <footer class="footer">我是 footer</footer>
+  <title>index</title>
+  <script type="module" crossorigin src="/web-layout-training-7tao/assets/main-45831634.js"></script>
+  <link rel="stylesheet" href="/web-layout-training-7tao/assets/main-f1fa9ceb.css">
+</head>
+
+<body>
+  <header class="border-bottom border-primary border-3 fixed-top bg-beige">
+    <div class="container py-lg-6 py-3">
+        <nav class="navbar navbar-expand-lg d-flex align-items-center">
+            <div class="container-fluid ">
+                <div class="logoSearch d-flex gap-lg-9 gap-6 align-items-center">
+                    <h1 class="mb-0">
+                        <a href="index.html" class="d-flex gap-4 align-items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="7TAO 活動訂票網" class="logoImg">
+                            <div class="text d-none d-lg-flex gap-1 align-items-center">
+                                <span class="fs-lg-3 ">7TAO </span>
+                                <span class="fs-lg-7">活動訂票網</span>
+                            </div>
+                            
+                        </a>
+                    </h1>
+                    <div class="searchBox d-sm-flex d-none border-primary border-2 border">
+                        <input type="text" class="form-control searchInput text-light border-0 py-lg-4 ps-lg-6 pe-0 font-content" aria-label="inputGroup-sizing"
+                            aria-describedby="inputGroup-sizing" placeholder="探索活動">
+                        <span class="input-group-text bg-primary text-secondary searchIcon p-4 border-0" id="inputGroup-sizing"><i class="icofont-search-1"></i></span>
+                    </div>
+                </div>
     
-  </body>
+    
+                <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-lg-6" aria-current="page" href="#">
+                                <i class="icofont-ui-file me-1"></i>REGISTER
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-lg-6" aria-current="page" href="#">
+                                <i class="icofont-ui-user me-1"></i>LOGIN
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <div class="container mt-top">
+      <section class="guide">
+        <div class="banner">
+          
+        </div>
+        
+          <ul class="themeList row mb-0 gx-lg-6 gx-2 gy-2 gy-xl-0 align-items-center my-xl-9 my-7">
+            <li class="item col-xl-2 col-4 ">
+              <a href="#" class="itemLink d-flex flex-column gap-lg-3 gap-2 align-items-center border border-2 border-primary">
+                <img src="/web-layout-training-7tao/assets/cate01-a12495cb.svg" alt="演出" class="themeSize">
+                <p class="fs-lg-4 fs-7 mb-0">演出</p>
+              </a>
+            </li>
+            <li class="item col-xl-2 col-4 ">
+              <a href="#" class="itemLink d-flex flex-column gap-lg-3 gap-2 align-items-center border border-2 border-primary">
+                <img src="/web-layout-training-7tao/assets/cate02-846b8212.svg" alt="聯誼" class="themeSize">
+                <p class="fs-lg-4 fs-7 mb-0">聯誼</p>
+              </a>
+            </li>
+            <li class="item col-xl-2 col-4 ">
+              <a href="#" class="itemLink d-flex flex-column gap-lg-3 gap-2 align-items-center border border-2 border-primary">
+                <img src="/web-layout-training-7tao/assets/cate03-831ab7b4.svg" alt="展覽" class="themeSize">
+                <p class="fs-lg-4 fs-7 mb-0">展覽</p>
+              </a>
+            </li>
+            <li class="item col-xl-2 col-4 ">
+              <a href="#" class="itemLink d-flex flex-column gap-lg-3 gap-2 align-items-center border border-2 border-primary">
+                <img src="/web-layout-training-7tao/assets/cate04-957f7830.svg" alt="美食" class="themeSize">
+                <p class="fs-lg-4 fs-7 mb-0">美食</p>
+              </a>
+            </li>
+            <li class="item col-xl-2 col-4 ">
+              <a href="#" class="itemLink d-flex flex-column gap-lg-3 gap-2 align-items-center border border-2 border-primary">
+                <img src="/web-layout-training-7tao/assets/cate05-72eeca47.svg" alt="戶外" class="themeSize">
+                <p class="fs-lg-4 fs-7 mb-0">戶外</p>
+              </a>
+            </li>
+            <li class="item col-xl-2 col-4 ">
+              <a href="#" class=" itemMore d-flex justify-content-center gap-lg-3 gap-2 align-items-center bg-primary w-100 h-100">
+                <p class="fs-lg-4 fs-7 mb-0 text-secondary">探索<br>更多</p>
+              </a>
+            </li>
+           
+          </ul>
+        
+        
+      </section>
+    </div>
+
+
+    <footer class="py-lg-7 py-6 border-top border-3 border-primary">
+    <p class="font-content text-center fs-lg-7 fs-8">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+      
+
+</body>
+
 </html>
