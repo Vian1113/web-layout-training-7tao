@@ -1,20 +1,44 @@
-.font-content{
+.font-content {
     font-family: 'Noto Sans TC', serif;
 }
 
-.mt-top{
+.mt-top {
     margin-top: 98px;
-    @include large{
+
+    @include large {
         margin-top: 122px;
     }
 }
 
-.themeSize{
+.themeSize {
     width: 40px;
     height: 40px;
 
-    @include large{
+    @include large {
         width: 80px;
         height: 80px;
     }
 }
+
+.text-justify {
+    text-align: justify;
+}
+
+.rotate-lg {
+    transform: translate(-50%, -50%) rotate(-4deg) !important;
+}
+
+.rotate-sm {
+    transform: translate(-50%, -50%) rotate(-3deg) !important;
+}
+
+.rotate-xs {
+    transform: rotate(2deg) !important;
+}
+
+.-rotate-xs {
+    transform: rotate(-2deg) !important;
+}
+
+
+

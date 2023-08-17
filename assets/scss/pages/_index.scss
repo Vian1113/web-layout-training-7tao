@@ -1,12 +1,33 @@
 .guide {
-  .banner {
-    background-image: url(../images/event/13.jpg);
-    //width: 1296px;
-    height: 518px;
-    object-fit: cover;
-    background-position: 15% 45%;
 
+  .bannerImg {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+    @include large {
+      height: 518px;
+    }
   }
+
+}
+
+.guideDate {
+  top: 32px;
+  left: 40px;
+  width: 113px;
+
+  @include large {
+    width: 373px;
+    top: 80px;
+    left: 48px;
+  }
+
+
+}
+
+.guideTitle {
+  bottom: 24px;
 }
 
 
@@ -18,13 +39,162 @@
       padding: 35px 0px;
     }
 
+    &:hover {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
   }
 
   .itemMore {
-    padding: 34px 0px;
+    padding: 24px 0px;
 
     @include large {
-      padding: 64px 0px;
+      padding: 30px 0px;
     }
   }
+}
+
+.recent {
+  .sparkler {
+    width: 20px;
+    height: 20px;
+
+    @include large {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .recentImg {
+    height: 210px;
+    object-fit: cover;
+    &:hover{
+      opacity:0.8 ;
+    }
+
+    @include large {
+      height: 255px;
+    }
+  }
+
+  .eventType:hover{
+    text-decoration: underline;
+  }
+  .more {
+    padding: 10px 0px;
+
+    @include large {
+      padding: 12px 0px;
+    }
+
+    .status{
+      z-index:3;
+    }
+
+    .deco{
+      width: 29px;
+      height: 29px;
+      border-radius:50%;
+      display: none;
+
+    }
+  }
+
+  .moreLink:hover{
+    .deco{
+      display: block;
+    }
+  }
+}
+
+.onlineEvent {
+
+  .eventImg{
+    background-image: url(../images/event/online.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .8s;
+    min-height:158px;
+    &:hover{
+      transform: scale(1.2);
+      
+    }
+    @include large{
+      min-height:auto;
+    }
+
+  }
+
+ 
+  .moreBtn:hover{
+    color:$secondary !important;
+  }
+
+}
+
+.tagitems {
+
+  border:1px solid $primary;
+  border-left:4px solid $primary;
+
+  &:hover{
+    background-color: $primary;
+    border-top:0px;
+    border-bottom:0px;
+    border-left:4px solid $secondary !important;
+    .itemLink{
+      color:$white !important;}
+
+  }
+}
+
+
+.eventSwiper{
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+  .swiper-slide {
+    letter-spacing: 3.2px;
+    width: auto;
+    
+  }
+}
+
+.albums{
+  .albumsImg{
+    height:267px;
+    object-fit: cover;
+   
+    @include large {
+      height:274px;
+    }
+
+    &:hover{
+      opacity: 0.8;
+    }
+
+  }
+
+  .tag{
+    z-index: 100;
+  }
+
+  // .albumsTag {
+  //   transform: translate(-50%, -50%) rotate(-4deg) !important;
+  // }
+}
+
+.contact{
+  .itemLink:hover{
+    color:$warning !important;
+  }
+
+  .subscribeBtn:hover{
+    color:$secondary !important;
+  }
+}
+
+.joinMemberBtn:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
