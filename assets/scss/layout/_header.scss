@@ -25,3 +25,10 @@
   }
   
 }
+
+.decoLine{
+  border-top:1px solid $primary;
+  @include large{
+    border-top:3px solid $primary;
+  }
+}

@@ -1,0 +1,14 @@
+.payWayDetail{
+    .deco{
+        width: 32px;
+        height: 32px;
+    }
+
+    .submitBtn:hover{
+        color:$secondary;
+    }
+
+    .cancelBtn:hover{
+        text-decoration:underline;
+    }
+}

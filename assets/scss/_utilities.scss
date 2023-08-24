@@ -2,8 +2,12 @@
     font-family: 'Noto Sans TC', serif;
 }
 
+.font-serif{
+    font-family: ' Noto Serif TC', serif;
+}
+
 .mt-top {
-    margin-top: 98px;
+    margin-top: 109px;
 
     @include large {
         margin-top: 122px;
@@ -24,6 +28,13 @@
     text-align: justify;
 }
 
+.borderArea{
+    border:2px solid $primary;
+    @include large{
+        border:3px solid $primary;
+    }
+}
+
 .rotate-lg {
     transform: translate(-50%, -50%) rotate(-4deg) !important;
 }
@@ -39,6 +50,17 @@
 .-rotate-xs {
     transform: rotate(-2deg) !important;
 }
+
+/* 覆蓋掉瀏覽器自帶input 預設記憶背景顏色 start */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 111111s;
+    -webkit-transition: color 11111s ease-out, background-color 111111s ease-out;
+}
+
+/* 覆蓋掉瀏覽器自帶input 預設記憶背景顏色 end */
 
 
 

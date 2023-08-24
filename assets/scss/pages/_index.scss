@@ -135,6 +135,7 @@
 
 .tagitems {
 
+
   border:1px solid $primary;
   border-left:4px solid $primary;
 
@@ -180,9 +181,7 @@
     z-index: 100;
   }
 
-  // .albumsTag {
-  //   transform: translate(-50%, -50%) rotate(-4deg) !important;
-  // }
+
 }
 
 .contact{
@@ -192,6 +191,13 @@
 
   .subscribeBtn:hover{
     color:$secondary !important;
+  }
+
+  .emailInput{
+    margin-bottom: 0;
+    @include large{
+      margin-bottom: 22px;
+    }
   }
 }
 

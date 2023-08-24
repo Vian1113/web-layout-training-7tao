@@ -1,4 +1,4 @@
-<header class="border-bottom border-primary border-3 fixed-top bg-beige">
+<header class=" fixed-top bg-beige">
     <div class="container py-lg-6 py-3">
         <nav class="navbar navbar-expand-lg d-flex align-items-center">
             <div class="container-fluid ">
@@ -14,9 +14,9 @@
                         </a>
                     </h1>
                     <div class="searchBox d-sm-flex d-none border-primary border-2 border">
-                        <input type="text" class="form-control searchInput text-light border-0 py-lg-4 ps-lg-6 pe-0 fs-8 font-content" aria-label="inputGroup-sizing"
+                        <input type="text" class="form-control searchInput text-light border-0 py-lg-4 ps-lg-6 pe-0 fs-8 font-content bg-transparent" aria-label="inputGroup-sizing"
                             aria-describedby="inputGroup-sizing" placeholder="探索活動">
-                        <span class="input-group-text bg-primary text-secondary searchIcon p-4 border-0" id="inputGroup-sizing"><i class="icofont-search-1"></i></span>
+                        <a href="#" class="input-group-text bg-primary text-secondary searchIcon p-4 border-0" id="inputGroup-sizing"><i class="icofont-search-1"></i></a>
                     </div>
                 </div>
     
@@ -25,22 +25,49 @@
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-primary"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav text-center mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link fs-7" aria-current="page" href="#">
-                                <i class="icofont-ui-file me-1"></i>REGISTER
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-7" aria-current="page" href="#">
-                                <i class="icofont-ui-user me-1"></i>LOGIN
-                            </a>
-                        </li>
-                       
-                    </ul>
-                </div>
+
+                <ul class="navbar-nav text-center mt-2 mt-lg-0 d-lg-flex d-none">
+                    <li class="nav-item">
+                        <a class="nav-link fs-7" aria-current="page" href="#">
+                            <i class="icofont-ui-file me-1"></i>REGISTER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-7" aria-current="page" href="login.html">
+                            <i class="icofont-ui-user me-1"></i>LOGIN
+                        </a>
+                    </li>
+                   
+                </ul>
+                
             </div>
+
         </nav>
+
     </div>
+    <hr class="opacity-100 mb-0 mt-3 mt-lg-0 decoLine">
+    <div class="container d-lg-none ">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <div class="container-fluid">
+                <ul class="navbar-nav text-center my-6 mt-lg-0 align-items-start container gap-4 pe-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-7" aria-current="page" href="#">
+                            <i class="icofont-ui-file me-1"></i>REGISTER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-7" aria-current="page" href="login.html">
+                            <i class="icofont-ui-user me-1"></i>LOGIN
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>
+    <hr class="border-1 border-top border-primary opacity-100 mb-0 mt-0 d-lg-none">
+    
 </header>
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 網頁上頭LOGO -->
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+
+
+    <title>7TAO 活動訂票網 - 訂單確認</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+
+        <section class="processOne mt-top d-flex flex-column">
+            <div class="main flex-grow-1 pt-lg-10 pt-6">
+                <div class="processBar container mb-lg-9 mb-6">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto ">
+                            <ol class="payList mt-5 d-flex justify-content-between list-unstyled position-relative">
+                                <li class="d-flex flex-column align-items-center gap-lg-2 gap-1">
+                                    <p
+                                        class="number d-flex justify-content-center align-items-center numberActive mb-0 fs-lg-6 fs-8 fw-bolder bg-primary text-secondary font-serif">
+                                        1</p>
+                                    <p class="fw-bold mb-0">訂單確認</p>
+                                </li>
+                                <li class="d-flex flex-column align-items-center gap-lg-2 gap-1 ">
+                                    <p
+                                        class="number d-flex justify-content-center align-items-center numberActive mb-0 fs-lg-6 fs-8 fw-bolder font-serif border-1 border border-primary bg-beige">
+                                        2</p>
+                                    <p class="fw-bold mb-0">結帳付款</p>
+                                </li>
+                                <li class="d-flex flex-column align-items-center gap-lg-2 gap-1 ">
+                                    <p
+                                        class="number d-flex justify-content-center align-items-center numberActive mb-0 fs-lg-6 fs-8 fw-bolder font-serif border-1 border border-primary bg-beige">
+                                        3</p>
+                                    <p class="fw-bold mb-0">訂購結果</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="orderDetail container mb-lg-9 mb-7">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+                            <h2 class="fs-lg-3 fs-4 fw-bolder text-lg-center text-start mb-lg-7 mb-6">返老還童-制服聯誼</h2>
+
+                            <ul class="detailList mb-0 border-top border-primary border-2">
+                                <li
+                                    class="item d-flex align-items-center justify-content-between py-2 border-bottom border-primary border-1">
+                                    <p class="fw-bolder mb-0">日期</p>
+                                    <p class="mb-0 font-content">2023/5/12</p>
+                                </li>
+                                <li
+                                    class="item d-flex align-items-center justify-content-between py-2 border-bottom border-primary border-1">
+                                    <p class="fw-bolder mb-0">票種</p>
+                                    <p class="mb-0 font-content">改頭換面票（含大改造）</p>
+                                </li>
+                                <li
+                                    class="item d-flex align-items-center justify-content-between py-2 border-bottom border-primary border-1">
+                                    <p class="fw-bolder mb-0">票價</p>
+                                    <p class="mb-0 font-content">$8000</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="contactDetail container mb-lg-10 mb-9">
+                    <div class="row text-center">
+                        <div class="col-lg-6 mx-auto">
+                            <img src="../assets/images/sparkler.png" alt="sparkler" class="deco mb-4">
+                            <h3 class="fs-5 fw-bolder mb-4">聯絡人資料</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-4 text-start">
+                                    <label for="inputName"
+                                        class="form-label font-content mb-2 font-content">聯絡人姓名</label>
+                                    <input type="text"
+                                        class="form-control text-light border border-primary border-2 py-2 ps-4 bg-transparent font-content"
+                                        id="inputName"  placeholder="請輸入聯絡人名稱" required >
+                                    <div id="validationServerUsernameFeedback" class="invalid-feedback font-content">
+                                        請輸入聯絡人姓名
+                                    </div>
+                                </div>
+                                <div class="mb-4 text-start">
+                                    <label for="inputEmail"
+                                        class="form-label font-content mb-2 font-content">Email</label>
+                                    <input type="email"
+                                        class="form-control text-light border border-primary border-2 py-2 ps-4 bg-transparent font-content"
+                                        id="inputEmail" placeholder="請輸入Email" required>
+                                    <div id="validationServerEmailFeedback" class="invalid-feedback font-content">
+                                        請輸入Email
+                                    </div>
+                                </div>
+                                <div class="mb-lg-7 mb-6 text-start">
+                                    <label for="inputPhone" class="form-label font-content">手機</label>
+                                    <input type="phone" minlength="10"
+                                        class="form-control text-light border border-primary border-2 py-2 ps-4 bg-transparent font-content"
+                                        id="inputPhone" placeholder="請輸入手機號碼" required>
+                                    <div id="validationServerPhoneFeedback" class="invalid-feedback font-content">
+                                        請輸入手機號碼
+                                    </div>
+                                </div>
+
+                                <a type="submit" href="payConfirm.html"
+                                    class="btn btn-primary col-lg-7 col-12 py-2 mb-4 fs-6 font-content submitBtn">確認表單資料<i
+                                        class="icofont-double-right ms-1"></i></a>
+                                <a href="#" class="fs-7 font-content cancelBtn">取消購票</a>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+            <script>
+                // 每個有 .needs-validation 的 <form> 元素，觸發 submit 事件時，
+                // 將該元素加入 class 'was-validated'
+                $('.needs-validation').each(function (index) {
+                    $(this).on('submit', function (e) {
+                        e.preventDefault();
+                        $(this).addClass('was-validated');
+                    });
+
+                    
+                });
+            </script>
+            
+
+
+
+</body>
+
+</html>

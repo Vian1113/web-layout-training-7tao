@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 網頁上頭LOGO -->
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+   
+
+
+
+
+    <title>7TAO 活動訂票網 - 訂單確認</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+
+        <section class="processOne mt-top d-flex flex-column">
+            <div class="main flex-grow-1 pt-lg-10 pt-6">
+
+                <div class="loginDetail container">
+                    <div class="row text-center">
+                        <div class="col-lg-4 mx-auto">
+                            <img src="../assets/images/sparkler.png" alt="sparkler" class="deco mb-4">
+                            <h3 class="fs-5 fw-bolder mb-4">會員登入</h3>
+                            
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-4 text-start">
+                                    <label for="inputAccount" class="form-label font-content mb-2 font-content">帳號</label>
+                                    <input type="text" class="form-control text-light border border-primary border-2 py-2 ps-4 bg-transparent font-content" id="inputAccount" placeholder="請輸入帳號" required>
+                                    
+                                    <div class="invalid-feedback font-content">
+                                        請輸入帳號
+                                    </div>
+                                </div>
+                                <div class="mb-lg-7 mb-6 text-start">
+                                  <label for="inputPassword" class="form-label font-content mb-2 font-content">密碼</label>
+                                  <input type="password" class="form-control text-light border border-primary border-2 py-2 ps-4 bg-transparent font-content" id="inputPassword" placeholder="請輸入密碼" required>
+                                  
+                                  <div class="invalid-feedback font-content">
+                                    請輸入密碼
+                                  </div>
+                                </div>
+                                
+                                  <button class="btn btn-primary w-100 py-2 fs-6 font-content submitBtn" type="submit">登入<i
+                                    class="icofont-double-right ms-1"></i></button>
+                                
+                              </form>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+            integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+          
+            <script>
+                // 每個有 .needs-validation 的 <form> 元素，觸發 submit 事件時，
+                // 將該元素加入 class 'was-validated'
+                $('.needs-validation').each(function (index) {
+                    $(this).on('submit', function (e) {
+                        e.preventDefault();
+                        $(this).addClass('was-validated');
+                    });
+                });
+            </script>
+            
+            
+
+
+
+</body>
+
+</html>

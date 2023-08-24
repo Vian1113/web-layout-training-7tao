@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 網頁上頭LOGO -->
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+
+
+    <title>7TAO 活動訂票網 - 付款頁面</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+
+        <section class="processOne mt-top d-flex flex-column">
+            <div class="main flex-grow-1 pt-lg-10 pt-6">
+                <div class="processBar container mb-lg-9 mb-6">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto ">
+                            <ol class="payList mt-5 d-flex justify-content-between list-unstyled position-relative">
+                                <li class="d-flex flex-column align-items-center gap-lg-2 gap-1">
+                                    <p
+                                        class="number d-flex justify-content-center align-items-center numberActive mb-0 fs-lg-6 fs-8 fw-bolder bg-primary text-secondary font-serif">
+                                        <i class="icofont-verification-check"></i>
+                                    </p>
+                                    <p class="fw-bold mb-0">訂單確認</p>
+                                </li>
+                                <li class="d-flex flex-column align-items-center gap-lg-2 gap-1 ">
+                                    <p
+                                        class="number d-flex justify-content-center align-items-center numberActive mb-0 fs-lg-6 fs-8 fw-bolder font-serif bg-primary text-secondary">
+                                        2</p>
+                                    <p class="fw-bold mb-0">結帳付款</p>
+                                </li>
+                                <li class="d-flex flex-column align-items-center gap-lg-2 gap-1 ">
+                                    <p
+                                        class="number d-flex justify-content-center align-items-center numberActive mb-0 fs-lg-6 fs-8 fw-bolder font-serif border-1 border border-primary bg-beige">
+                                        3</p>
+                                    <p class="fw-bold mb-0">訂購結果</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="orderDetail container mb-lg-9 mb-7">
+                    <div class="row">
+                        <div class="col-lg-7 mx-auto">
+                            <h2 class="fs-lg-3 fs-4 fw-bolder text-lg-center text-start mb-4">返老還童-制服聯誼</h2>
+                            <h4
+                                class="mb-lg-7  mb-6 py-2 px-lg-3 px-2 bg-primary text-secondary font-content fs-lg-8 fs-9 text-center">
+                                您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</h4>
+                            <ul class="detailList mb-0 border-top border-primary border-2 col-lg-10 col-12 mx-auto">
+                                <li
+                                    class="item d-flex align-items-center justify-content-between py-2 border-bottom border-primary border-1">
+                                    <p class="fw-bolder mb-0">訂單編號</p>
+                                    <p class="mb-0 font-content">892746123</p>
+                                </li>
+                                <li
+                                    class="item d-flex align-items-center justify-content-between py-2 border-bottom border-primary border-1">
+                                    <p class="fw-bolder mb-0">票券</p>
+                                    <p class="mb-0 font-content">改頭換面票（含大改造）$8000</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="payWayDetail container mb-lg-10 mb-9">
+                    <div class="row text-center">
+                        <div class="col-lg-6 mx-auto mb-lg-10 mb-9">
+                            <img src="../assets/images/sparkler.png" alt="sparkler" class="deco mb-4">
+                            <h3 class="fs-5 fw-bolder mb-4">結帳資訊</h3>
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-4 text-start">
+                                    <label for="inputTicketInfo"
+                                        class="form-label font-content mb-2 font-content">取票資訊</label>
+                                    <input type="text"
+                                        class="form-control text-light border border-primary border-2 py-2 ps-4 bg-transparent font-content"
+                                        id="inputTicketInfo" placeholder="請輸入身分證字號或護照號碼" required>
+                                    <div id="inputHelp" class="form-text text-dark font-content">請輸入您的 <span
+                                            class="text-danger">身分證字號</span>供取票使用，外籍人士請輸入 <span
+                                            class="text-danger">護照號碼</span>
+                                    </div>
+                                    <div id="validationServerUsernameFeedback" class="invalid-feedback font-content">
+                                        請輸入身分證字號或護照號碼
+                                    </div>
+                                </div>
+                                <div class="mb-lg-7 mb-6 text-start">
+                                    <p class="font-content mb-2">付款方式</p>
+                                    <div class="form-check d-flex align-items-center gap-2">
+                                        <input class="form-check-input" type="radio" name="payWayRadio" id="creditRadio" required>
+                                        <label class="form-check-label font-content" for="creditRadio">
+                                            信用卡
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex align-items-center gap-2">
+                                        <input class="form-check-input" type="radio" name="payWayRadio" id="atmRadio"
+                                            required>
+                                        <label class="form-check-label font-content" for="atmRadio">
+                                            ATM虛擬帳號
+                                        </label>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+
+                                <a type="submit" href="processDone.html"
+                                    class="btn btn-primary col-lg-7 col-12 py-2 fs-6 font-content submitBtn mb-0">確認訂單並繳費
+                                    $8000<i class="icofont-double-right ms-1"></i></a>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+            
+            <script>
+                //每個有 .needs-validation 的 <form> 元素，觸發 submit 事件時，
+                //將該元素加入 class 'was-validated'
+                $('.needs-validation').each(function (index) {
+                    $(this).on('submit', function (e) {
+                        e.preventDefault();
+                        $(this).addClass('was-validated');
+                    });
+                });
+            </script>
+
+
+
+
+</body>
+
+</html>

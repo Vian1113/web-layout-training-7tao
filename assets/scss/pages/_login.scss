@@ -1,0 +1,6 @@
+.loginDetail{
+    margin-bottom:264px ;
+    @include large{
+        margin-bottom: 175px;
+    }
+}

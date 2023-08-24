@@ -9,6 +9,8 @@
 
 @import "../../node_modules/bootstrap";
 @import '../../node_modules/icofont/dist/icofont.css';//引入icofont 
+@import '../../node_modules/aos/dist/aos.css';//引入aos css
+@import '../../node_modules/animate.css/animate.css';//引入animate.css
 
 
 @import './breakpoint';//斷點設定
@@ -20,4 +22,8 @@
 
 @import './pages/index.scss';
 @import './pages/event.scss';
+@import './pages/eventDetail.scss';
+@import './pages/orderConfirm.scss';
+@import './pages/payConfirm.scss';
+@import './pages/login.scss'
 
